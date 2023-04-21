@@ -97,7 +97,7 @@ router.post("/login", (request, response) => {
     });
 });
 
-router.get("/quest-endpoint", (request, response) => {
+router.get("/guest-endpoint", (request, response) => {
   response.json({ message: "You are free to access me anytime" });
 });
 
