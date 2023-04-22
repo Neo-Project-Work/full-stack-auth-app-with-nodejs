@@ -1,10 +1,11 @@
 const express = require('express')
 const app = express()
 const port = 4000
-
+const cors = require('cors');
 const dbConnect = require("./db/dbConnect");
 
 dbConnect();
+app.use(cors()) 
 
 // Curb Cores Error by adding a header here
 app.use((req, res, next) => {
